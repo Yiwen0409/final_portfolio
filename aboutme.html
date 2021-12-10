@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="images/profile.jpeg"/>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aktiv-grotesk"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yiwen Yang - About Me</title>
+    </head>
+    <body>
+        <header>
+            <div class="skip"><a href="#skipto">Skip to Content</a></div>
+            <div href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="myLinks">
+                <a class="notcurrent"href="index.html">Home</a>
+                <a class="notcurrent"href="architecture.html">Architecture</a>
+                <a class="notcurrent"href="fashion.html">Fashion</a>
+                <a class="notcurrent"href="graphics.html">Graphics</a>
+                <a class="current" href="aboutme.html">About Me</a>
+            </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </header>
+        <main>
+            <div class="myprofile" id="skipto">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/profile.jpeg" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="images/Me.jpeg" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <h1>About Me</h1>
+                    <p><em>Name:</em> Yiwen Yang</p>
+                    <p><em>Date of Birth:</em> 04/09/1997</p>
+                    <p><em>Pronounce:</em> He/Him/They/Them</p>
+                    <p><em>Location:</em> Ann Arbor, MI</p>
+                    <p><em>Background:</em> UX Design/Architecture</p>
+                    <p><em>Hobby:</em> Art/Music/Games/Technology/<br>Pets/Bars/Traveling</p>
+                </div>
+            </div>
+            <div class="bigcontainer">
+                <h2>Contact Form</h3>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                       <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="name">Yiwen Yang</p>
+            <p id="address">540 Thompson St.</p>
+            <p id="city">Ann Arbor, MI</p>
+            <p id="number">(734)450-5022</p>
+            <p id="email">yiwyang@umich.edu</p>
+        </footer>
+    </body>
+</html>
